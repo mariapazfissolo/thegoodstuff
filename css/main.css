@@ -127,21 +127,19 @@ h1,h2,h3,h4,h5,h6{
    justify-content: center;
 }
 .blog{
-    background-color: #fd8d29;
+    background-color: #FCE2C9;
     display: flex;
     align-items: center;
     padding-inline: 6rem;
 }
-.blog1{
-}
 .blog-tittle{
-    color: #FCE2C9;
+    color: #fd4b01;
     padding-bottom: 3rem;
 }
 .blog-text{
     text-align: left;
     padding-bottom: 2rem;
-    color: #FCE2C9;
+    color: #FD4B01;
 }
 .blog-image{
     height: 440px;
@@ -150,5 +148,65 @@ h1,h2,h3,h4,h5,h6{
     padding: 3rem
 }
 .grid{
-    
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "social   club";
+}
+.social{
+    background-image: url(../images/byw.jpg);
+    text-align: center;
+    color: #FD4B01;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.cuadro{
+    background-color: #FCE2C9;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1rem #FCE2C9;
+
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.icon{
+    color: #FD4B01;
+    font-size: 2rem;
+}
+.social-tittle{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.social-text{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 2rem;
+    font-size: 14px;
+}
+.club{
+    background-color: #FD68B5;
+    text-align: center;
+    color: #FCE2C9;
+    padding-top: 3rem;
+}
+.club-text{
+    padding-top: 2.5rem;
+    padding-inline: 2rem;
+    font-size: 15px;
+}
+.btn3{
+    font-family: groovy;
+    background-color: #FCE2C9;
+    color: #FD68B5;
+    padding: .5rem 1rem;
+    border-radius: 45%;
+    border: solid .3rem white;
+    justify-content: center;
 }
