@@ -21,41 +21,65 @@ h1,h2,h3,h4,h5,h6{
     font-family: groovy;
   
 }
-.logo-titulo{
-    color: #FCE2C9;
-}
-.logo-subtitulo{
-    color: #FCE2C9;
-}
-.propaganda{
-    background-color: beige;
-}
-
 .header{
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1rem 3rem;
     align-items: center;
-    background-color: #fd4b01;
+    background-color: transparent;
+    position: sticky;
 }
-.menu{
-    list-style-type: none;
+.header-logo{
+    font-family: groovy;
+    font-size: 2rem;
+    font-weight: 800;
+    transition: .2s;
+    color: #FD68B5;
+}
+.nav{
+    display: block;
+    color: #FCE2C9;
+}
+.nav-list{
+    font-family: groovy;
     display: flex;
-    gap: 6rem;
+    gap: 1rem;
+    
+}
+.nav-item{
+    list-style-type: none;
 }
 .menu-link{
     color: #FCE2C9;
+    text-decoration: underline .2rem;
+}
+.header-button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.button{
+    display: flex;
     font-family: groovy;
+    align-items: center;
+    background-color: #F9A5E0;
+    color: #FD4B01;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: solid .2rem #FD4B01;
+    
 }
-.logo-subtitulo{
-    text-align: right;
+.button:hover {
+    background-color: #d9a4ad;
 }
+
 .hero{
-    background-color: #FCE2C9;
+    background-color: transparent;
     display: flex;
     align-items: center;
     padding-inline: 8rem;
 }
+
 .hero-tittle{
     text-align: center;
     padding-top: 6rem;
@@ -66,7 +90,7 @@ h1,h2,h3,h4,h5,h6{
 .hero-text{
     text-align: center;
     padding-bottom: 1rem;
-    color: #FD4B01;
+    color: #FD68B5;
 }
 .hero-image{
     height: 450px;
@@ -79,14 +103,8 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 3rem;
     color: #FD4B01;
 }
-.btn{
-    font-family: groovy;
-    background-color: #F9A5E0;
-    color: #FD4B01;
-    padding: .5rem 1rem;
-    border-radius: 45%;
-    border: solid .2rem #FD4B01;
-}
+
+
 .frase{
     display: flex;
     padding: 2rem;
@@ -210,3 +228,15 @@ h1,h2,h3,h4,h5,h6{
     border: solid .3rem white;
     justify-content: center;
 }
+
+/****** DARK MODE ******/
+
+body {
+    transition: background-color .3s, color .3s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: #FD4B01;
+}
+

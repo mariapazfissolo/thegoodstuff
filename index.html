@@ -10,32 +10,29 @@
 </head>
 <body>
     <header class="header">
+        <a class="header-logo" href="./index.html">The good stuff</a>
         <nav class="nav">
-            <ul class="menu">
-                <li class="menu-item"><a class="menu-link" href="./index.html">HOME</a></li>
-                <li class="menu-item"><a class="menu-link" href="./pages/products.html">PRODUCTS</a></li>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="menu-link" href="./pages/products.html">PRODUCTS</a></li>
+                <li class="nav-item"><a class="menu-link" href="./pages/about-us.html">ABOUT US</a></li>
+                <li class="nav-item"><a class="menu-link" href="./pages/contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        <div class="logo">
-            <h1 class="logo-titulo">The good stuff</h1>
-            <p class="logo-subtitulo"><strong>by maria paz</strong></p>
+        <div class="header-button">
+            <div>
+                <button id="color-mode" class="button">Dark Mode</button>
+            </div>
         </div>
-        <nav class="nav">
-            <ul class="menu">
-                <li class="menu-item"><a class="menu-link" href="./pages/about-us.html">ABOUT US</a></li>
-                <li class="menu-item"><a class="menu-link" href="./pages/contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section class="hero">
+    <main> 
+        <section class="hero" id="contenido">
             <img class="hero-image" src="./images/8b9ecad7b1eb6a5071a998394e69a257.jpg" alt="">
             <div class="hero-info">
                 <h2 class="hero-tittle">we're all about finding your sparkl!</h2>
                 <p class="hero-text"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio molestias cupiditate recusandae aliquam, deleniti asperiores! Veritatis aspernatur qui nisi culpa quasi molestiae est itaque tempore incidunt ut, excepturi, sunt quas. </strong></p>
                 <p class="hero-text2"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum itaque quasi quisquam suscipit praesentium in impedit! Veniam labore culpa atque nisi accusamus corporis expedita sed aliquid. Ullam, nobis repudiandae.</strong>
                 </p>
-                <p class="hero-text2"><a class="btn" href="#">sparkl</a></p>
+                <p class="hero-text2" id="boton"><a class="btn" href="#">sparkl</a></p>
              </div>
         </section>
         <section class="frase">
@@ -89,13 +86,7 @@
             </div>
             
         </section>
-
-
-
-
-
-
     </main>
-    
+   <script src="./js/main.js"></script> 
 </body>
 </html>
