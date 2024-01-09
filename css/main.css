@@ -17,10 +17,12 @@
     box-sizing: border-box;
 }
 *::selection{
-    background-color: #C8F353;
+    background-color: #b2ff9e;
 }
 a{
     text-decoration: none;
+    color: #C8F353;
+    
 }
 p{
     font-family: rubik;
@@ -36,14 +38,14 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     background-color: transparent;
     position: sticky;
-    border-bottom: 1px solid #D1F278
+    border-bottom: 1px solid #C8F353
 }
 .header-logo{
     font-family: negrita;
     font-size: 2rem;
     font-weight: 800;
     transition: .2s;
-    color: #D1F278;
+    color: #C8F353;
 }
 .nav{
     display: block;
@@ -58,11 +60,8 @@ h1,h2,h3,h4,h5,h6{
     list-style-type: none;
 }
 .menu-link{
-    color: black;
-}
-.menu-link:hover{
-    background-color:#D1F278;
-    border-radius: .5rem;
+    /* color: black;  */
+    list-style: none;
 }
 .header-button{
     display: flex;
@@ -73,15 +72,14 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     font-family: negrita;
     align-items: center;
-    background-color: #D1F278;
+    background-color: #C8F353;
     color: black;
     padding: .5rem 1rem;
     border-radius: .5rem;
-    border: solid .2rem #D1F278;
-    
+    border: solid .2rem #C8F353;
 }
 .button:hover {
-    background-color: #C8F353;
+    background-color: #D1F278;
 }
 
 .hero{
@@ -97,12 +95,12 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 6rem;
     padding-bottom: 2rem;
     font-size: 28px;
-    color: #D1F278;
+    color: #C8F353;
 }
 .hero-text{
     text-align: center;
     padding-bottom: 1rem;
-    color: black;
+   /*  color: black; */
     
 }
 .hero-image{
@@ -114,33 +112,33 @@ h1,h2,h3,h4,h5,h6{
 .hero-text2{
     text-align: center;
     padding-bottom: 3rem;
-    color: black;
+    /* color: black; */
 }
 .btn1{
     font-family: negrita;
     align-items: center;
     justify-content: center;
-    background-color: #D1F278;
+    background-color: #C8F353;
     color: black;
     padding: .5rem 1rem;
     border-radius: .5rem;
-    border: solid .2rem #D1F278;
+    border: solid .2rem #C8F353;
 }
 .btn1:hover{
-    background-color: #C8F353;
+    background-color: #D1F278;
 }
 
 .frase{
     display: flex;
     padding: 2rem;
-    background-color: #D1F278;
+    background-color: #C8F353;
     color: black;
     text-align: center;
     justify-content: center;
 }
 .stickers{
    /*  background-color: #F9A5E0; */
-    color: black;
+    /* color: black; */
     text-align: center;
     padding: 1rem;
 }
@@ -164,14 +162,14 @@ h1,h2,h3,h4,h5,h6{
 
 .btn2{
    font-family: negrita;
-   background-color: #D1F278;
+   background-color: #C8F353;
    color: black;
    padding: .5rem 1rem;
    border-radius: .5rem;
    justify-content: center;
 }
 .blog{
-    background-color: #D1F278;
+    background-color: #C8F353;
     display: flex;
     align-items: center;
     padding-inline: 6rem;
@@ -208,7 +206,7 @@ h1,h2,h3,h4,h5,h6{
     padding-left: 3rem;
 }
 .cuadro{
-    background-color: #D1F278;
+    background-color: #C8F353;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -236,7 +234,7 @@ h1,h2,h3,h4,h5,h6{
 .club{
     /* background-color: #FD68B5; */
     text-align: center;
-    color: black;
+   /*  color: black; */
     padding-top: 3rem;
 }
 .club-text{
