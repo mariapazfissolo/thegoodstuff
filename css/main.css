@@ -1,24 +1,32 @@
-@font-face {
-    font-family: Groovy;
-    src: url(../fonts/KeeponTruckin.ttf);
-}
+
 @font-face {
     font-family: poppins;
     src: url(../fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: rubik;
+    src: url(../fonts/Rubik-Light.ttf);
+}
+@font-face {
+    font-family: negrita;
+    src: url(../fonts/Rubik-Regular.ttf);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    background-color: #C8F353;
+}
 a{
     text-decoration: none;
 }
 p{
-    font-family: poppins;
+    font-family: rubik;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: groovy;
+    font-family: negrita;
   
 }
 .header{
@@ -28,20 +36,20 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     background-color: transparent;
     position: sticky;
+    border-bottom: 1px solid #D1F278
 }
 .header-logo{
-    font-family: groovy;
+    font-family: negrita;
     font-size: 2rem;
     font-weight: 800;
     transition: .2s;
-    color: #FD68B5;
+    color: #D1F278;
 }
 .nav{
     display: block;
-    color: #FCE2C9;
 }
 .nav-list{
-    font-family: groovy;
+    font-family: rubik;
     display: flex;
     gap: 1rem;
     
@@ -50,8 +58,11 @@ h1,h2,h3,h4,h5,h6{
     list-style-type: none;
 }
 .menu-link{
-    color: #FCE2C9;
-    text-decoration: underline .2rem;
+    color: black;
+}
+.menu-link:hover{
+    background-color:#D1F278;
+    border-radius: .5rem;
 }
 .header-button{
     display: flex;
@@ -60,17 +71,17 @@ h1,h2,h3,h4,h5,h6{
 }
 .button{
     display: flex;
-    font-family: groovy;
+    font-family: negrita;
     align-items: center;
-    background-color: #F9A5E0;
-    color: #FD4B01;
+    background-color: #D1F278;
+    color: black;
     padding: .5rem 1rem;
     border-radius: .5rem;
-    border: solid .2rem #FD4B01;
+    border: solid .2rem #D1F278;
     
 }
 .button:hover {
-    background-color: #d9a4ad;
+    background-color: #C8F353;
 }
 
 .hero{
@@ -78,6 +89,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     padding-inline: 8rem;
+    align-items: center;
 }
 
 .hero-tittle{
@@ -85,12 +97,13 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 6rem;
     padding-bottom: 2rem;
     font-size: 28px;
-    color: #FD4B01;
+    color: #D1F278;
 }
 .hero-text{
     text-align: center;
     padding-bottom: 1rem;
-    color: #FD68B5;
+    color: black;
+    
 }
 .hero-image{
     height: 450px;
@@ -101,21 +114,33 @@ h1,h2,h3,h4,h5,h6{
 .hero-text2{
     text-align: center;
     padding-bottom: 3rem;
-    color: #FD4B01;
+    color: black;
 }
-
+.btn1{
+    font-family: negrita;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1F278;
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: solid .2rem #D1F278;
+}
+.btn1:hover{
+    background-color: #C8F353;
+}
 
 .frase{
     display: flex;
     padding: 2rem;
-    background-color: #FD68B5;
-    color: #FCE2C9;
+    background-color: #D1F278;
+    color: black;
     text-align: center;
     justify-content: center;
 }
 .stickers{
-    background-color: #FD4B01;
-    color: #FD68B5;
+   /*  background-color: #F9A5E0; */
+    color: black;
     text-align: center;
     padding: 1rem;
 }
@@ -136,28 +161,29 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 1rem;
     text-align: center;
 }
+
 .btn2{
-   font-family: groovy;
-   background-color: #F9A5E0;
-   color: #FD4B01;
+   font-family: negrita;
+   background-color: #D1F278;
+   color: black;
    padding: .5rem 1rem;
-   border-radius: 45%;
+   border-radius: .5rem;
    justify-content: center;
 }
 .blog{
-    background-color: #FCE2C9;
+    background-color: #D1F278;
     display: flex;
     align-items: center;
     padding-inline: 6rem;
 }
 .blog-tittle{
-    color: #fd4b01;
+    color: black;
     padding-bottom: 3rem;
 }
 .blog-text{
     text-align: left;
     padding-bottom: 2rem;
-    color: #FD4B01;
+    color: black;
 }
 .blog-image{
     height: 440px;
@@ -173,21 +199,20 @@ h1,h2,h3,h4,h5,h6{
     "social   club";
 }
 .social{
-    background-image: url(../images/byw.jpg);
+    /* background-image: url(../images/byw.jpg); */
     text-align: center;
-    color: #FD4B01;
+    color: black;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 3rem;
     padding-left: 3rem;
 }
 .cuadro{
-    background-color: #FCE2C9;
-    border-radius: 7%;
+    background-color: #D1F278;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1rem #FCE2C9;
 
 }
 .icons{
@@ -195,7 +220,7 @@ h1,h2,h3,h4,h5,h6{
     gap: 1rem;
 }
 .icon{
-    color: #FD4B01;
+    color: black;
     font-size: 2rem;
 }
 .social-tittle{
@@ -209,9 +234,9 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
 }
 .club{
-    background-color: #FD68B5;
+    /* background-color: #FD68B5; */
     text-align: center;
-    color: #FCE2C9;
+    color: black;
     padding-top: 3rem;
 }
 .club-text{
@@ -220,12 +245,11 @@ h1,h2,h3,h4,h5,h6{
     font-size: 15px;
 }
 .btn3{
-    font-family: groovy;
-    background-color: #FCE2C9;
-    color: #FD68B5;
+    font-family: negrita;
+    background-color: black;
+    color: #D1F278;
     padding: .5rem 1rem;
-    border-radius: 45%;
-    border: solid .3rem white;
+    border-radius: .5rem;
     justify-content: center;
 }
 
@@ -236,7 +260,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: black;
-    color: #FD4B01;
+    background-color: #313638;
+    color: white;
 }
 
